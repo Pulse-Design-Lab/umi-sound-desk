@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#0d1522">
+<title>Pulse Design Lab｜Web制作・実装パートナー</title>
+<meta name="description" content="Pulse Design Labは静的Webサイト、配信者向けサイト、ブラウザツールの設計・制作を行います。既存の制作実績と対応内容をご紹介します。">
+<style>
+:root{color-scheme:dark;--bg:#0d1522;--panel:#152236;--line:#2d4259;--text:#f2f5f8;--mute:#a6b4c5;--accent:#c9f1d5;font-family:system-ui,-apple-system,BlinkMacSystemFont,'Noto Sans JP',sans-serif}
+*,*:before,*:after{box-sizing:border-box}body{margin:0;color:var(--text);background:var(--bg)}a{color:inherit;text-decoration:none}button{font:inherit}
+.wrap{max-width:1130px;margin:0 auto;padding:0 24px}.head{border-bottom:1px solid var(--line);background:#0c1520eb;position:sticky;top:0;z-index:2}.head .wrap{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-size:17px;font-weight:850;letter-spacing:-.02em}.logo span{color:var(--accent)}.head nav{display:flex;gap:18px;align-items:center;font-size:13px;color:var(--mute)}
+.hero{padding:90px 0 84px;position:relative;background:radial-gradient(ellipse at 85% 7%,#244956aa,transparent 48%),radial-gradient(ellipse at 5% 100%,#1a2848aa,transparent 50%)}
+.kicker{color:var(--accent);font-size:12px;font-weight:850;letter-spacing:.16em;margin:0 0 20px}
+h1{max-width:880px;font-size:clamp(39px,6.5vw,72px);line-height:1.19;letter-spacing:-.065em;margin:0 0 28px}h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:17px;color:#c5d0dc;line-height:1.9;max-width:700px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 23px;border-radius:100px;font-size:14px;font-weight:750;border:1px solid var(--line)}.btn-primary{background:var(--accent);color:#14241f;border-color:var(--accent)}.btn-outline{color:var(--text)}
+.summary{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}.pill{border-radius:100px;background:#1d3340;border:1px solid #355460;padding:8px 15px;color:#d2e9e5;font-size:12px}
+section.section{padding:70px 0;border-top:1px solid #25364a}.section h2{font-size:clamp(26px,4vw,37px);letter-spacing:-.04em;margin:0 0 14px}.sub{color:var(--mute);font-size:14px;line-height:1.8;margin:0 0 28px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{padding:27px;border:1px solid var(--line);background:linear-gradient(160deg,#19283b,#111d2e);border-radius:18px;min-width:0}.card .n{font-size:13px;color:var(--accent);font-weight:900}.card h3{font-size:21px;letter-spacing:-.025em;line-height:1.35;margin:20px 0 12px}.card p{font-size:14px;line-height:1.8;color:var(--mute);margin:0}.card ul{padding-left:19px;color:#c2d0db;font-size:13px;line-height:1.95}
+.examples{display:grid;grid-template-columns:1fr 1fr;gap:18px}.example{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}
+.preview{height:185px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:radial-gradient(circle at 70% 30%,#376171,transparent 55%),#0d2232}.preview.soft{background:radial-gradient(circle at 25% 25%,#394a74,transparent 55%),#101c32}.preview b{font-size:clamp(24px,4vw,39px);letter-spacing:-.04em}.preview small{color:#b4d7d4;letter-spacing:.08em}.content{padding:25px}.content h3{font-size:21px;margin:0 0 10px}.content p{font-size:14px;color:var(--mute);line-height:1.8}.ext{color:var(--accent);font-size:13px;font-weight:750;text-underline-offset:4px;text-decoration:underline}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{border-top:2px solid var(--accent);padding-top:17px}.step small{color:var(--accent);font-size:12px;font-weight:900}.step h3{margin:8px 0;font-size:16px}.step p{font-size:13px;color:var(--mute);line-height:1.75}
+.note{border:1px solid #39576b;border-radius:15px;background:#142c3a;padding:20px;font-size:14px;color:#d0dde6;line-height:1.9}
+.contact{padding:62px;border-radius:25px;background:linear-gradient(115deg,#223b4a,#152337);border:1px solid #456574}.contact h2{font-size:35px;margin:0 0 10px}.contact p{color:#c3d1dd;line-height:1.85}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#8299ad;font-size:12px}
+@media(max-width:760px){.wrap{padding:0 18px}.head .wrap{min-height:64px}.head nav a:first-child{display:none}.hero{padding:65px 0 58px}.hero h1{font-size:clamp(34px,9vw,55px)}.lead{font-size:15px}.cards{grid-template-columns:1fr}.examples{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.contact{padding:29px}.contact h2{font-size:27px}}
+@media(max-width:380px){.head nav{gap:8px}.head nav a:nth-child(2){display:none}.steps{grid-template-columns:1fr}}
+</style></head>
+<body><header class="head"><div class="wrap"><a href="#" class="logo">PULSE <span>DESIGN LAB</span></a><nav><a href="#services">対応領域</a><a href="#works">制作実績</a><a href="#contact" class="btn btn-primary" style="min-height:38px;padding:0 17px">相談する</a></nav></div></header>
+<main><div class="hero"><div class="wrap"><p class="kicker">WEB DESIGN &amp; IMPLEMENTATION</p>
+<h1>伝わるデザインを、<br><em>使えるサイトに。</em></h1>
+<p class="lead">スマートフォンを中心に、独自の世界観を持つWebサイトや、操作できるブラウザツールを設計・実装します。個人・クリエイター向けの小規模な制作から、Web制作会社の外部実装パートナーまで対応します。</p>
+<div class="actions"><a class="btn btn-primary" href="#contact">制作・協業について相談する →</a><a class="btn btn-outline" href="#works">制作事例を見る ↓</a></div>
+<div class="summary"><span class="pill">HTML / CSS / JavaScript</span><span class="pill">スマホファースト</span><span class="pill">GitHub・静的ホスティング</span><span class="pill">独立した機能設計</span></div>
+</div></div>
+<section class="section" id="services"><div class="wrap"><h2>対応できること</h2><p class="sub">抽象的なデザイン提案だけでなく、表示・操作・公開までを意識した制作を行います。</p>
+<div class="cards"><article class="card"><span class="n">01 / WEB PAGE</span><h3>スマホ向け<br>オリジナルサイト</h3><p>クリエイター・配信者・小規模サービス向けに、情報の整理からレスポンシブな画面実装まで。</p><ul><li>プロフィール・リンク・お問い合わせ導線</li><li>世界観に合わせた画面設計</li><li>更新を見据えた静的サイト構成</li></ul></article>
+<article class="card"><span class="n">02 / UI & UX</span><h3>Webアプリ・<br>操作UIの試作</h3><p>タイマーや進捗管理など、ブラウザで直接使えるインタラクティブなツール。</p><ul><li>JavaScriptでの画面・操作実装</li><li>モバイルのタッチ操作に配慮</li><li>状態管理・入力検証・基本テスト</li></ul></article>
+<article class="card"><span class="n">03 / COLLABORATION</span><h3>制作会社の<br>外部制作パートナー</h3><p>LPやサイトのコーディング、UI改修、静的ページの調整。仕様を確認したうえで範囲と見積もりを提示。</p><ul><li>既存サイトのレイアウト修正</li><li>デザインデータからの実装相談</li><li>スポット・案件単位での協業</li></ul></article>
+</div></div></section>
+<section class="section" id="works"><div class="wrap"><h2>制作事例</h2><p class="sub">以下は自社・自主プロジェクトの事例です。外部企業からの受託実績や効果実績として表示しているものではありません。</p>
+<div class="examples">
+<article class="example"><div class="preview"><small>PERSONAL FAN SITE</small><b>海くんサイト</b><small>自分らしい世界観を伝える</small></div><div class="content"><h3>クリエイター向けファンサイト</h3><p>プロフィール、ファン向け情報、複数ページへの導線を備えた独自デザインのサイト。スマートフォンでの使いやすさを重視。</p><a class="ext" href="https://umikun.pages.dev/" target="_blank" rel="noopener noreferrer">公開サイトを見る ↗</a></div></article>
+<article class="example"><div class="preview soft"><small>INTERACTIVE WEB TOOL</small><b>UMI SOUND DESK</b><small>配信を支えるブラウザツール</small></div><div class="content"><h3>配信者向け操作ツール</h3><p>画面内のボタン操作で効果音などを扱う、Webベースの配信サポートツール。操作を伴う機能実装のサンプル。</p><a class="ext" href="https://github.com/Pulse-Design-Lab/umi-sound-desk" target="_blank" rel="noopener noreferrer">GitHubのコードを見る ↗</a></div></article>
+</div></div></section>
+<section class="section"><div class="wrap"><h2>案件の進め方</h2><p class="sub">着手前に必要な情報と納品条件を整理し、作業範囲が曖昧なまま進めません。</p>
+<div class="steps"><div class="step"><small>STEP 01</small><h3>相談・仕様確認</h3><p>目的、対象ユーザー、素材、機能、希望納期を整理。</p></div><div class="step"><small>STEP 02</small><h3>見積もり</h3><p>対応範囲、納品形式、修正回数、費用を明文化。</p></div><div class="step"><small>STEP 03</small><h3>制作・確認</h3><p>画面制作と主要な表示・操作の確認。</p></div><div class="step"><small>STEP 04</small><h3>納品</h3><p>合意した形式でデータを引き渡し。必要に応じ公開方法を案内。</p></div></div>
+</div></section>
+<section class="section"><div class="wrap"><div class="note"><strong>対応範囲について：</strong> WordPressテーマ開発、大規模な保守運用、外部API・会員決済の実装などは要件を伺った上で個別判断します。成果・売上・広告効果についての保証は行いません。納期や料金も案件の条件により異なります。</div></div></section>
+<section class="section" id="contact"><div class="wrap"><div class="contact"><p class="kicker">WORK WITH US</p><h2>制作・協業のご相談</h2><p>制作会社様の外注パートナー応募、スポットでのコーディング、クリエイター向けサイト制作のご相談を受け付けています。要件と参考サイトを添えてご連絡ください。</p>
+<div class="actions"><a class="btn btn-primary" href="mailto:sns.pulsedesignlab@gmail.com?subject=Web%E5%88%B6%E4%BD%9C%E3%83%BB%E5%8D%94%E6%A5%AD%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87&body=%E3%80%90%E3%81%94%E7%9B%B8%E8%AB%87%E5%86%85%E5%AE%B9%E3%80%91%0A%0A%E3%80%90%E5%8F%82%E8%80%83URL%E3%80%91%0A%0A%E3%80%90%E5%B8%8C%E6%9C%9B%E7%B4%8D%E6%9C%9F%E3%80%91%0A">メールで相談する →</a></div></div></div></section>
+</main><footer><div class="wrap">© 2026 PULSE DESIGN LAB. 自社・自主プロジェクトの紹介を含むポートフォリオです。</div></footer></body></html>
